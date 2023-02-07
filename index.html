@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
+      integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <body>
+      <body>
+        <div class="container">
+          <div class="weather-app">
+            <form class="search-form" id="search-form">
+              <div class="row">
+                <div class="col-6">
+                  <input
+                    type="search"
+                    placeholder="Type a city.."
+                    autofocus="on"
+                    autocomplete="off"
+                    id="city-input"
+                    class="form-control shadow-sm"
+                  />
+                </div>
+                <div class="col-3">
+                  <input
+                    type="submit"
+                    value="Search"
+                    class="form-control btn btn-primary shadow-sm w-100"
+                  />
+                </div>
+                <div class="col-3">
+                  <button
+                    class="btn btn-success w-100"
+                    id="current-location-button"
+                  >
+                    Current
+                  </button>
+                </div>
+              </div>
+            </form>
+            <h1 id="city"></h1>
+            <ul>
+              <li id="date"></li>
+              <li id="description"></li>
+            </ul>
+            <div class="row">
+              <div class="col-6">
+                <div class="clearfix">
+                  <div class="float-left">
+                    <span class="temperature" id="temperature"></span
+                    ><span class="units">°C</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <ul>
+                  <li>Humidity: <span id="humidity"></span>%</li>
+                  <li>Wind: <span id="wind"></span> km/h</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="group">
+          <div class="days">
+            <div class="row justify-content-center">
+              <div class="col-1">
+                Mon <br />
+                9 Jan <br />
+                ☀️
+              </div>
+              <div class="col-1">
+                Tues <br />
+                10 Jan <br />
+                ☀️
+              </div>
+              <div class="col-1">
+                Wed <br />
+                11 Jan <br />
+                ☀️
+              </div>
+              <div class="col-1">
+                Thurs <br />
+                12 Jan <br />
+                ☀️
+              </div>
+              <div class="col-1">
+                Fri <br />
+                13 Jan <br />
+                ☀️
+              </div>
+            </div>
+            <div class="temp">
+              <div class="row justify-content-center">
+                <div class="col-1">34°C</div>
+                <div class="col-1">34°C</div>
+                <div class="col-1">35°C</div>
+                <div class="col-1">37°C</div>
+                <div class="col-1">38°C</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </body>
+    </body>
+    <script src="script.js"></script>
+  </head>
+</html>
